@@ -1,0 +1,19 @@
+<form #f="ngForm" (ngSubmit)="add(f)">
+    <h1>Modification de Donnée :</h1>
+    <h3 class="m1">Nom:</h3>
+    <input class="form-control" type="text" aria-label="default input example" required name="name" ngModel #t="ngModel"
+        [ngModel]="k.name">
+
+    <h3 class="m1">Prenom:</h3>
+    <input class="form-control" type="text" aria-label="default input example" required name="nomp" ngModel #s="ngModel"
+        [ngModel]="k.nomp">
+
+    <h3 class="m1">téléphone:</h3>
+    <input class="form-control" type="text" aria-label="default input example" required name="phone" ngModel
+        #m="ngModel" [ngModel]="k.phone">
+
+    <h3 class="m1">email:</h3>
+    <input class="form-control" type="text" required name="email" ngModel #d="ngModel" [ngModel]="k.email">
+
+    <button type="submit" class="btn btn-primary">Modéfier</button>
+</form>
